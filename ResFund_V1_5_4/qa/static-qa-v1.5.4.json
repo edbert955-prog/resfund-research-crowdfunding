@@ -1,0 +1,16 @@
+{
+  "php_files_linted": 93,
+  "javascript_files_checked": 7,
+  "css_qualified_rules": {
+    "admin-dashboard.css": 149,
+    "app.css": 877,
+    "donor-dashboard.css": 352,
+    "motion.css": 15,
+    "researcher-dashboard.css": 221,
+    "reviewer-dashboard.css": 288
+  },
+  "css_parse_errors": 0,
+  "composer_json_identical_to_v1_5_3": true,
+  "layouts_with_motion": 5,
+  "motion_browser_smoke": "PASS"
+}

@@ -1,0 +1,26 @@
+{
+  "results": [
+    {
+      "viewport": "1366x900",
+      "scroll_reveal": "PASS",
+      "counter": "PASS",
+      "progress": "PASS",
+      "header_depth": "PASS",
+      "button_feedback": "PASS",
+      "horizontal_overflow": "PASS"
+    },
+    {
+      "viewport": "390x844",
+      "horizontal_overflow": "PASS",
+      "mobile_menu_escape": "PASS",
+      "shared_form_interactions": "PASS"
+    },
+    {
+      "viewport": "1280x850 reduced-motion",
+      "motion_disabled": "PASS",
+      "content_visible": "PASS"
+    }
+  ],
+  "console_errors": [],
+  "status": "PASS"
+}

@@ -1,0 +1,293 @@
+/* ResFund V1.3 — researcher workspace components; shared tokens/components come from donor-dashboard.css. */
+.researcher-app-body { --research-accent: #2463c9; --research-accent-soft: #eaf2ff; }
+.researcher-sidebar .donor-role-chip { border-color: rgba(162,207,255,.34); background: rgba(39,101,190,.22); }
+.researcher-verification-banner { display:flex; align-items:center; gap:15px; margin:0 0 20px; padding:16px 18px; border:1px solid #ead6a6; border-radius:14px; color:#6f4b12; background:#fff8e8; }
+.researcher-verification-banner.is-verified { border-color:#b9dfc9; color:#185f40; background:#eff9f2; }
+.researcher-banner-icon { display:grid; place-items:center; flex:0 0 38px; width:38px; height:38px; border-radius:50%; color:#80550e; background:#f9e9bf; font-weight:900; font-size:20px; }
+.researcher-verification-banner.is-verified .researcher-banner-icon { color:#176b4a; background:#d8f0e1; }
+.researcher-verification-banner > div { flex:1; min-width:0; }
+.researcher-verification-banner strong { display:block; font-size:15px; color:inherit; }
+.researcher-verification-banner p { margin:3px 0 0; color:inherit; font-size:14px; line-height:1.55; }
+.researcher-verification-banner > a { flex:0 0 auto; color:inherit; font-size:14px; font-weight:800; white-space:nowrap; }
+.researcher-stat-grid { grid-template-columns:repeat(4,minmax(0,1fr)); }
+.researcher-dashboard-grid { grid-template-columns:minmax(0,1.45fr) minmax(290px,.85fr); }
+.researcher-project-list { display:grid; gap:0; }
+.researcher-project-list-full { padding:0 4px; }
+.researcher-project-row { display:flex; align-items:center; justify-content:space-between; gap:22px; padding:17px 0; border-bottom:1px solid #edf1f6; }
+.researcher-project-row:first-child { padding-top:3px; }
+.researcher-project-row:last-child { padding-bottom:3px; border-bottom:0; }
+.researcher-project-main { min-width:0; flex:1; }
+.researcher-project-category { display:inline-flex; margin-bottom:5px; padding:3px 9px; border-radius:999px; color:#285991; background:#edf4ff; font-size:12px; font-weight:750; }
+.researcher-project-main h3 { margin:0; color:#243d5c; font-size:17px; line-height:1.4; }
+.researcher-project-main h3 a { color:inherit; }
+.researcher-project-main h3 a:hover { color:#245fce; text-decoration:underline; }
+.researcher-project-main p { margin:4px 0 10px; color:#536780; font-size:14px; }
+.researcher-project-main > small { display:block; margin-top:6px; color:#52647a; font-size:13px; }
+.researcher-progress { height:10px; overflow:hidden; border-radius:999px; background:#e9eef6; }
+.researcher-progress span { display:block; height:100%; border-radius:inherit; background:linear-gradient(90deg,#245fce,#62a7db); }
+.researcher-project-action { display:grid; justify-items:end; gap:10px; flex:0 0 172px; }
+.researcher-project-action .status-pill { max-width:172px; text-align:center; justify-content:center; }
+.researcher-project-action .button { white-space:nowrap; }
+.researcher-expense-summary { padding:19px; border:1px solid #dce7f4; border-radius:13px; background:linear-gradient(145deg,#f3f7ff,#fff); }
+.researcher-expense-summary span,.researcher-expense-summary small { display:block; color:#526780; font-size:14px; }
+.researcher-expense-summary strong { display:block; margin:7px 0 3px; color:#173b73; font-size:27px; line-height:1.25; letter-spacing:-.5px; }
+.researcher-quick-actions { display:grid; gap:8px; margin-top:15px; }
+.researcher-quick-actions a { display:grid; grid-template-columns:34px minmax(0,1fr) 20px; align-items:center; gap:11px; padding:12px; border:1px solid #e5ebf4; border-radius:11px; color:#2b4567; }
+.researcher-quick-actions a:hover { border-color:#b7ccef; background:#f8fbff; }
+.researcher-quick-actions a > span:first-child { display:grid; place-items:center; width:34px; height:34px; border-radius:9px; color:#245fce; background:#eaf1ff; font-size:19px; }
+.researcher-quick-actions strong,.researcher-quick-actions small { display:block; }
+.researcher-quick-actions strong { color:#2a4262; font-size:14px; }
+.researcher-quick-actions small { margin-top:2px; color:#52647a; font-size:13px; line-height:1.45; }
+.researcher-process-panel { margin-top:18px; }
+.researcher-process-steps { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; }
+.researcher-process-steps > div { display:grid; align-content:start; gap:7px; min-width:0; padding:16px; border:1px solid #e4ebf4; border-radius:12px; background:#fbfcfe; }
+.researcher-process-steps > div > span { display:grid; place-items:center; width:33px; height:33px; border-radius:10px; color:#245fce; background:#eaf1ff; font-weight:850; }
+.researcher-process-steps strong { color:#294360; font-size:15px; }
+.researcher-process-steps small { color:#52647a; font-size:13px; line-height:1.5; }
+.researcher-definition-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px 22px; margin:18px 0 0; }
+.researcher-definition-list div { padding-bottom:10px; border-bottom:1px solid #edf1f6; }
+.researcher-definition-list dt { color:#52647a; font-size:13px; }
+.researcher-definition-list dd { margin:4px 0 0; color:#263f5f; font-size:15px; font-weight:750; overflow-wrap:anywhere; }
+.researcher-validation-steps { display:grid; gap:18px; margin:6px 0 19px; padding:0; list-style:none; }
+.researcher-validation-steps li { display:grid; grid-template-columns:34px minmax(0,1fr); align-items:start; gap:12px; }
+.researcher-validation-steps li > span { display:grid; place-items:center; width:32px; height:32px; border:1px solid #d6e0ed; border-radius:50%; color:#62748b; background:#f7f9fc; font-weight:850; }
+.researcher-validation-steps li.is-complete > span { border-color:#bce1cc; color:#176b4a; background:#e9f7ee; }
+.researcher-validation-steps li.is-current > span { border-color:#b9cef1; color:#245fce; background:#eaf1ff; }
+.researcher-validation-steps strong,.researcher-validation-steps small { display:block; }
+.researcher-validation-steps strong { color:#2a4262; font-size:15px; }
+.researcher-validation-steps small { margin-top:3px; color:#52647a; font-size:13px; line-height:1.5; }
+.researcher-form { display:grid; gap:23px; }
+.researcher-form-section { padding-bottom:21px; border-bottom:1px solid #e9eef5; }
+.researcher-form-section:last-of-type { border-bottom:0; }
+.researcher-form-section > h2 { margin:5px 0 16px; color:#203b5e; font-size:21px; }
+.researcher-form-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+.researcher-field-wide { grid-column:1 / -1; }
+.researcher-form .donor-form-field label { display:block; margin-bottom:7px; color:#2d4563; font-size:15px; font-weight:750; }
+.researcher-form .donor-form-field input,.researcher-form .donor-form-field select,.researcher-form .donor-form-field textarea { width:100%; min-height:48px; padding:11px 13px; border:1px solid #b9c6d7; border-radius:9px; color:#243b59; background:#fff; font-size:16px; }
+.researcher-form .donor-form-field textarea { min-height:108px; resize:vertical; }
+.researcher-form .donor-form-field small { display:block; margin-top:5px; color:#52647a; font-size:13px; line-height:1.5; }
+.researcher-form .donor-form-field label span { color:#a12828; }
+.researcher-milestone-editor { min-width:0; margin:0 0 13px; padding:16px; border:1px solid #dce5f0; border-radius:12px; }
+.researcher-milestone-editor legend { padding:0 7px; color:#29496f; font-size:15px; font-weight:850; }
+.researcher-remove-milestone { min-height:34px; margin-top:9px; padding:6px 10px; border:1px solid #e7c7c7; border-radius:8px; color:#9c3434; background:#fff; font-size:13px; font-weight:750; }
+.researcher-remove-milestone:disabled { opacity:.45; cursor:not-allowed; }
+.researcher-allocation-total { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; padding:13px 15px; border-radius:11px; background:#f3f7fd; }
+.researcher-allocation-total span { color:#3a536f; font-size:14px; font-weight:700; }
+.researcher-allocation-total strong { color:#245fce; font-size:20px; }
+.researcher-allocation-total small { flex:1 0 100%; color:#52647a; font-size:13px; }
+.researcher-allocation-total.is-valid { outline:1px solid #b9dec8; background:#f0faf3; }
+.researcher-allocation-total.is-invalid { outline:1px solid #e4b9b9; background:#fff5f5; }
+.researcher-form-actions { display:flex; justify-content:flex-end; gap:10px; }
+.researcher-long-text { color:#415771; font-size:15px; line-height:1.8; }
+.researcher-section-subheading { display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:8px; margin-top:22px; }
+.researcher-section-subheading h3 { margin:0; color:#284362; font-size:17px; }
+.researcher-section-subheading p { margin:0; color:#52647a; font-size:13px; }
+.researcher-proposal-milestones { display:grid; gap:0; margin-top:10px; }
+.researcher-proposal-milestones article { display:grid; grid-template-columns:34px minmax(0,1fr) auto; align-items:start; gap:12px; padding:14px 0; border-bottom:1px solid #edf1f6; }
+.researcher-proposal-milestones article:last-child { border-bottom:0; }
+.researcher-proposal-milestones strong { color:#2a4262; font-size:15px; }
+.researcher-proposal-milestones p { margin:3px 0 0; color:#52647a; font-size:13px; line-height:1.5; }
+.researcher-proposal-milestones b { color:#245fce; font-size:14px; white-space:nowrap; }
+.researcher-milestone-number { display:grid; place-items:center; width:32px; height:32px; border-radius:50%; color:#245fce; background:#eaf1ff; font-weight:850; }
+.researcher-detail-grid { grid-template-columns:minmax(0,1.45fr) minmax(275px,.75fr); align-items:start; }
+.researcher-status-card { display:grid; gap:6px; padding:15px; border:1px solid #e0e8f2; border-radius:12px; background:#f8faff; }
+.researcher-status-card span,.researcher-status-card small { color:#52647a; font-size:13px; }
+.researcher-status-card strong { color:#274463; font-size:17px; }
+.researcher-action-help { color:#52647a; font-size:14px; line-height:1.6; }
+.researcher-secondary-action { margin-top:10px; }
+.researcher-milestone-project { margin-bottom:18px; }
+.researcher-milestone-list { display:grid; gap:14px; }
+.researcher-milestone-card { padding:17px; border:1px solid #e2eaf4; border-radius:13px; background:#fcfdff; }
+.researcher-milestone-card-head { display:grid; grid-template-columns:34px minmax(0,1fr) auto; align-items:start; gap:12px; }
+.researcher-milestone-card-title strong { color:#294463; font-size:16px; }
+.researcher-milestone-card-title p { margin:4px 0 0; color:#52647a; font-size:14px; line-height:1.5; }
+.researcher-milestone-card-status { display:grid; justify-items:end; gap:7px; }
+.researcher-milestone-card-status b { color:#245fce; font-size:15px; }
+.researcher-milestone-meta { display:flex; flex-wrap:wrap; gap:8px 20px; margin:14px 0 0 46px; padding-top:12px; border-top:1px solid #edf1f6; color:#52647a; font-size:13px; }
+.researcher-milestone-meta strong { color:#304966; }
+.researcher-reviewers { margin:13px 0 0 46px; padding:12px; border-radius:10px; background:#f2f6fc; }
+.researcher-reviewers > strong { display:block; color:#2d496a; font-size:13px; }
+.researcher-reviewers > div { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin-top:8px; }
+.researcher-reviewers span { display:flex; align-items:center; gap:7px; color:#52647a; font-size:13px; }
+.researcher-reviewers i { width:9px; height:9px; flex:0 0 9px; border-radius:50%; background:#d69b37; }
+.researcher-reviewers i.is-approved { background:#1b8758; }
+.researcher-payout-form-wrap { margin:14px 0 0 46px; padding:15px; border:1px solid #d5e3f5; border-radius:11px; background:#f7faff; }
+.researcher-payout-form-wrap h3 { margin:0 0 4px; color:#29476a; font-size:16px; }
+.researcher-payout-form-wrap > p { margin:0 0 13px; color:#52647a; font-size:13px; line-height:1.55; }
+.researcher-inline-form { display:flex; align-items:flex-end; flex-wrap:wrap; gap:12px; }
+.researcher-inline-form .donor-form-field { flex:1 1 190px; }
+.researcher-inline-form label:not(.donor-form-field label) { display:flex; align-items:center; gap:8px; flex:1 1 210px; color:#3e526b; font-size:14px; }
+.researcher-inline-form input[type=checkbox] { width:18px; height:18px; }
+.researcher-inline-form .donor-form-field label { display:block; margin-bottom:6px; color:#3d526d; font-size:14px; font-weight:750; }
+.researcher-inline-form input[type=number] { width:100%; min-height:45px; padding:9px 11px; border:1px solid #b9c6d7; border-radius:8px; font-size:16px; }
+.researcher-upload-form { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:13px; }
+.researcher-upload-form .donor-form-field label { display:block; margin-bottom:7px; color:#3d526d; font-size:14px; font-weight:750; }
+.researcher-upload-form input[type=file] { width:100%; min-height:46px; padding:9px; border:1px solid #b9c6d7; border-radius:8px; background:#fff; font-size:14px; }
+.researcher-upload-form small { display:block; margin-top:5px; color:#52647a; font-size:12px; }
+.researcher-upload-form button { grid-column:1 / -1; justify-self:start; }
+.researcher-milestone-result { display:grid; gap:4px; margin:14px 0 0 46px; padding:12px 14px; border-radius:10px; color:#425770; background:#f2f5f9; }
+.researcher-milestone-result strong { font-size:14px; }
+.researcher-milestone-result span { font-size:13px; line-height:1.5; }
+.researcher-milestone-result.is-success { color:#1c6144; background:#edf8f1; }
+.researcher-milestone-result.is-pending { color:#7a5515; background:#fff7e6; }
+.researcher-expenses-layout { grid-template-columns:minmax(310px,.85fr) minmax(0,1.45fr); align-items:start; }
+.researcher-expense-form { display:grid; gap:13px; }
+.researcher-expense-form .donor-form-field label { display:block; margin-bottom:6px; color:#2d4563; font-size:14px; font-weight:750; }
+.researcher-expense-form .donor-form-field input,.researcher-expense-form .donor-form-field select,.researcher-expense-form .donor-form-field textarea { width:100%; min-height:45px; padding:9px 11px; border:1px solid #b9c6d7; border-radius:8px; color:#243b59; background:#fff; font-size:15px; }
+.researcher-expense-form .donor-form-field textarea { min-height:95px; resize:vertical; }
+.researcher-expense-form .donor-form-field small { display:block; margin-top:5px; color:#52647a; font-size:12px; line-height:1.5; }
+.researcher-expense-form .donor-form-field label span { color:#a12828; }
+.researcher-expense-form input[type=file] { padding:8px; }
+.researcher-filter-inline { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto; align-items:end; gap:10px; margin-bottom:15px; }
+.researcher-filter-inline .donor-form-field label { display:block; margin-bottom:5px; color:#3d526d; font-size:13px; font-weight:750; }
+.researcher-filter-inline select { width:100%; min-height:42px; padding:8px 9px; border:1px solid #b9c6d7; border-radius:8px; background:white; font-size:14px; }
+.researcher-ledger-summary { display:flex; justify-content:space-between; gap:12px; padding:12px 14px; margin-bottom:13px; border-radius:10px; background:#f4f7fc; }
+.researcher-ledger-summary span { color:#52647a; font-size:13px; }
+.researcher-ledger-summary strong { color:#183f78; font-size:16px; }
+.researcher-append-only-note { margin-top:14px; padding:13px 14px; border:1px solid #d6e4f5; border-radius:10px; background:#f5f9ff; }
+.researcher-append-only-note strong { color:#234a7b; font-size:14px; }
+.researcher-append-only-note p { margin:4px 0 0; color:#52647a; font-size:13px; line-height:1.55; }
+.researcher-app-body .donor-table { min-width:730px; }
+.researcher-app-body .donor-table td strong { max-width:220px; }
+@media (max-width: 1180px) {
+  .researcher-stat-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .researcher-dashboard-grid,.researcher-detail-grid,.researcher-expenses-layout { grid-template-columns:1fr; }
+}
+@media (max-width: 900px) {
+  .researcher-process-steps { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 680px) {
+  .researcher-verification-banner { align-items:flex-start; flex-wrap:wrap; }
+  .researcher-verification-banner > a { margin-left:52px; }
+  .researcher-project-row { align-items:flex-start; flex-direction:column; gap:12px; }
+  .researcher-project-action { display:flex; align-items:center; justify-content:space-between; width:100%; flex:1 1 auto; }
+  .researcher-project-action .status-pill { max-width:65%; }
+  .researcher-process-steps { grid-template-columns:1fr 1fr; }
+  .researcher-form-grid,.researcher-upload-form { grid-template-columns:1fr; }
+  .researcher-field-wide,.researcher-upload-form button { grid-column:auto; }
+  .researcher-form-actions { flex-direction:column-reverse; }
+  .researcher-form-actions .button { width:100%; }
+  .researcher-milestone-card-head { grid-template-columns:32px minmax(0,1fr); }
+  .researcher-milestone-card-status { grid-column:2; justify-items:start; display:flex; align-items:center; flex-wrap:wrap; }
+  .researcher-milestone-meta,.researcher-reviewers,.researcher-payout-form-wrap,.researcher-milestone-result { margin-left:0; }
+  .researcher-reviewers > div { grid-template-columns:1fr; }
+  .researcher-inline-form { align-items:stretch; flex-direction:column; }
+  .researcher-inline-form .button { width:100%; }
+  .researcher-filter-inline { grid-template-columns:1fr; }
+  .researcher-definition-list { grid-template-columns:1fr; }
+  .researcher-proposal-milestones article { grid-template-columns:32px minmax(0,1fr); }
+  .researcher-proposal-milestones b { grid-column:2; }
+}
+
+/* V1.3 readability pass — keep researcher content comfortably readable. */
+.researcher-app-body .donor-nav-link { font-size: 15px; }
+.researcher-app-body .donor-sidebar-label { font-size: 12px; }
+.researcher-app-body .donor-sidebar-note strong { font-size: 14px; }
+.researcher-app-body .donor-sidebar-note p { font-size: 13px; }
+.researcher-app-body .donor-topbar-kicker { font-size: 11px; }
+.researcher-app-body .donor-topbar-context strong { font-size: 18px; }
+.researcher-app-body .donor-user-chip strong { font-size: 14px; }
+.researcher-app-body .donor-user-chip small { font-size: 13px; }
+.researcher-app-body .donor-footer { font-size: 13px; }
+.researcher-app-body .donor-eyebrow,
+.researcher-app-body .donor-section-kicker { font-size: 12px; }
+.researcher-app-body .donor-breadcrumb { font-size: 14px; }
+.researcher-app-body .donor-page-intro p { font-size: 16px; }
+.researcher-app-body .donor-stat-top { font-size: 14px; }
+.researcher-app-body .donor-stat-card > small { color: #52647a; font-size: 13px; }
+.researcher-app-body .donor-panel-heading p { font-size: 14px; }
+.researcher-app-body .donor-text-link { font-size: 15px; }
+.researcher-app-body .status-pill { font-size: 12px; }
+.researcher-app-body .researcher-project-main h3 { font-size: 18px; }
+.researcher-app-body .researcher-project-main p { font-size: 15px; }
+.researcher-app-body .researcher-project-main > small { font-size: 14px; }
+.researcher-app-body .researcher-project-category { font-size: 13px; }
+.researcher-app-body .researcher-verification-banner strong { font-size: 16px; }
+.researcher-app-body .researcher-verification-banner p,
+.researcher-app-body .researcher-verification-banner > a { font-size: 15px; }
+.researcher-app-body .researcher-process-steps strong { font-size: 16px; }
+.researcher-app-body .researcher-process-steps small { font-size: 14px; }
+.researcher-app-body .researcher-definition-list dt { font-size: 14px; }
+.researcher-app-body .researcher-definition-list dd { font-size: 16px; }
+.researcher-app-body .researcher-validation-steps strong { font-size: 16px; }
+.researcher-app-body .researcher-validation-steps small { font-size: 14px; }
+.researcher-app-body .researcher-form .donor-form-field label,
+.researcher-app-body .researcher-expense-form .donor-form-field label { font-size: 16px; }
+.researcher-app-body .researcher-form .donor-form-field small,
+.researcher-app-body .researcher-expense-form .donor-form-field small { font-size: 14px; }
+.researcher-app-body .researcher-milestone-editor legend { font-size: 16px; }
+.researcher-app-body .researcher-remove-milestone { min-height: 40px; font-size: 14px; }
+.researcher-app-body .researcher-action-help,
+.researcher-app-body .researcher-long-text { font-size: 16px; }
+.researcher-app-body .researcher-section-subheading h3 { font-size: 18px; }
+.researcher-app-body .researcher-section-subheading p { font-size: 14px; }
+.researcher-app-body .researcher-proposal-milestones strong { font-size: 16px; }
+.researcher-app-body .researcher-proposal-milestones p { font-size: 14px; }
+.researcher-app-body .researcher-proposal-milestones b { font-size: 15px; }
+.researcher-app-body .researcher-milestone-card-title strong { font-size: 17px; }
+.researcher-app-body .researcher-milestone-card-title p { font-size: 15px; }
+.researcher-app-body .researcher-milestone-meta { font-size: 14px; }
+.researcher-app-body .researcher-reviewers > strong,
+.researcher-app-body .researcher-reviewers span { font-size: 14px; }
+.researcher-app-body .researcher-payout-form-wrap h3 { font-size: 17px; }
+.researcher-app-body .researcher-payout-form-wrap > p { font-size: 14px; }
+.researcher-app-body .researcher-inline-form label:not(.donor-form-field label) { font-size: 15px; }
+.researcher-app-body .researcher-inline-form .donor-form-field label,
+.researcher-app-body .researcher-upload-form .donor-form-field label { font-size: 15px; }
+.researcher-app-body .researcher-upload-form small { font-size: 13px; }
+.researcher-app-body .researcher-milestone-result strong { font-size: 15px; }
+.researcher-app-body .researcher-milestone-result span { font-size: 14px; }
+.researcher-app-body .researcher-expense-form .donor-form-field input,
+.researcher-app-body .researcher-expense-form .donor-form-field select,
+.researcher-app-body .researcher-expense-form .donor-form-field textarea { font-size: 16px; min-height: 48px; }
+.researcher-app-body .researcher-filter-inline .donor-form-field label { font-size: 14px; }
+.researcher-app-body .researcher-filter-inline select { min-height: 46px; font-size: 15px; }
+.researcher-app-body .researcher-ledger-summary span { font-size: 14px; }
+.researcher-app-body .researcher-ledger-summary strong { font-size: 17px; }
+.researcher-app-body .researcher-append-only-note strong { font-size: 15px; }
+.researcher-app-body .researcher-append-only-note p { font-size: 14px; }
+.researcher-app-body .donor-table th { font-size: 13px; }
+.researcher-app-body .donor-table td { font-size: 14px; }
+.researcher-app-body .donor-table td strong { font-size: 15px; }
+.researcher-app-body .donor-table td small { font-size: 13px; }
+.researcher-app-body .donor-inline-empty,
+.researcher-app-body .donor-empty-state p { font-size: 15px; }
+.researcher-app-body .donor-info-callout { font-size: 15px; }
+.researcher-app-body .donor-info-callout p { line-height: 1.65; }
+
+/* Form controls and keyboard targets exceed the 24px minimum comfortably. */
+.researcher-app-body .button,
+.researcher-app-body .donor-nav-link,
+.researcher-app-body .donor-mobile-toggle,
+.researcher-app-body .researcher-remove-milestone,
+.researcher-app-body input[type="checkbox"] { min-height: 44px; }
+.researcher-app-body input[type="checkbox"] { width: 22px; height: 22px; min-width: 22px; accent-color: #245fce; }
+.researcher-app-body :focus-visible { outline: 3px solid #a65b00; outline-offset: 3px; }
+
+@media (max-width: 680px) {
+  .researcher-app-body .donor-topbar-context strong { font-size: 16px; }
+  .researcher-app-body .researcher-project-main h3 { font-size: 17px; }
+  .researcher-app-body .researcher-stat-grid { grid-template-columns: 1fr 1fr; }
+  .researcher-app-body .researcher-process-steps { grid-template-columns: 1fr; }
+  .researcher-app-body .researcher-project-action { align-items: flex-start; }
+  .researcher-app-body .donor-footer { flex-direction: column; font-size: 12px; }
+}
+
+/* V1.3.1 visual fixes for status indicators and info panels. */
+.researcher-verification-banner.is-verified .researcher-banner-icon {
+    color: #145c3c !important;
+    background: #d9f1e2 !important;
+    border: 1px solid #a9d8bc;
+}
+.researcher-validation-steps li.is-complete > span {
+    color: #145c3c !important;
+    background: #e5f5eb !important;
+    border-color: #a8d7ba !important;
+}
+.researcher-app-body .donor-info-callout {
+    display: block;
+    color: #244a78;
+}
+.researcher-app-body .donor-info-callout strong {
+    color: #173f75;
+}

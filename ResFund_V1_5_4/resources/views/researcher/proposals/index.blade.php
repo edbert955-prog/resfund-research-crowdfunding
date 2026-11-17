@@ -1,0 +1,18 @@
+@extends('layouts.researcher')
+@section('title', 'Proposal dan Kampanye')
+@section('page-heading', 'Proposal & Kampanye')
+@section('researcher-content')
+<div class="donor-page-intro"><div><div class="donor-breadcrumb"><a href="{{ route('researcher.dashboard') }}">Dashboard</a><span>/</span><span>Proposal &amp; Kampanye</span></div><span class="donor-eyebrow">PENGELOLAAN KAMPANYE</span><h1>Proposal dan kampanye riset</h1><p>Susun proposal, tetapkan target pendanaan, dan pantau status pemeriksaan sebelum kampanye ditayangkan.</p></div><a href="{{ route('researcher.proposals.create') }}" class="button button-primary"><x-icon name="file-plus" size="18" /> Buat proposal</a></div>
+<section class="donor-panel">
+<form class="donor-filter-bar" method="GET" action="{{ route('researcher.proposals.index') }}"><div class="donor-form-field"><label for="proposal-search">Cari proposal</label><input id="proposal-search" type="search" name="q" value="{{ $query }}" placeholder="Judul atau ringkasan penelitian"></div><div class="donor-form-field"><label for="proposal-status">Status proposal / kampanye</label><select id="proposal-status" name="status"><option value="">Semua status</option><option value="DRAFT" @selected($status === 'DRAFT')>Draft</option><option value="SUBMITTED" @selected($status === 'SUBMITTED')>Menunggu validasi</option><option value="APPROVED" @selected($status === 'APPROVED')>Disetujui</option><option value="ACTIVE" @selected($status === 'ACTIVE')>Aktif</option><option value="FUNDED" @selected($status === 'FUNDED')>Target tercapai</option></select></div><div class="donor-filter-actions"><button class="button button-primary" type="submit">Terapkan</button><a class="button button-outline" href="{{ route('researcher.proposals.index') }}">Reset</a></div></form>
+<div class="researcher-project-list researcher-project-list-full">
+@if(count($projects))
+@foreach($projects as $project)
+<article class="researcher-project-row"><div class="researcher-project-main"><span class="researcher-project-category">{{ $project['category'] }}</span><h3><a href="{{ route('researcher.proposals.show', ['slug' => $project['slug']]) }}">{{ $project['title'] }}</a></h3><p>{{ $project['proposal_status_label'] }} · {{ $project['campaign_status_label'] }}</p><div class="researcher-progress" role="progressbar" aria-label="Progres pendanaan {{ $project['title'] }}" aria-valuenow="{{ $project['target'] > 0 ? min(100, (int) round(($project['collected'] / $project['target']) * 100)) : 0 }}" aria-valuemin="0" aria-valuemax="100"><span style="width: {{ $project['target'] > 0 ? min(100, (int) round(($project['collected'] / $project['target']) * 100)) : 0 }}%"></span></div><small>Rp{{ number_format($project['collected'],0,',','.') }} terkumpul dari Rp{{ number_format($project['target'],0,',','.') }} · {{ count($project['milestones']) }} milestone</small></div><div class="researcher-project-action"><span class="status-pill {{ $project['proposal_status'] === 'APPROVED' ? 'status-settled' : ($project['proposal_status'] === 'SUBMITTED' ? 'status-waiting' : 'status-neutral') }}">{{ $project['proposal_status_label'] }}</span><a class="button button-outline button-small" href="{{ route('researcher.proposals.show', ['slug' => $project['slug']]) }}">Lihat detail</a></div></article>
+@endforeach
+@else
+<div class="donor-empty-state"><span class="empty-icon"><x-icon name="file-text" size="26" /></span><h3>Proposal tidak ditemukan</h3><p>Ubah kata kunci atau filter, atau buat proposal baru.</p><a href="{{ route('researcher.proposals.create') }}" class="button button-primary">Buat proposal</a></div>
+@endif
+</div>
+</section>
+@endsection

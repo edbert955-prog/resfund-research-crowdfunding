@@ -1,0 +1,19 @@
+@extends('layouts.donor')
+@section('title', 'Ajukan Klarifikasi Audit')
+@section('page-heading', 'Klarifikasi Audit')
+@section('donor-content')
+@include('donor.partials.page-intro', ['pageHeading' => 'Ajukan Klarifikasi Audit', 'breadcrumb' => 'Klarifikasi Audit / Formulir', 'eyebrow' => 'FORMULIR AUDIT', 'pageDescription' => 'Pilih transaksi ledger dan jelaskan hal yang perlu diklarifikasi.'])
+<div class="donor-detail-layout">
+    <section class="donor-panel"><div class="donor-panel-heading"><div><span class="donor-section-kicker">FORMULIR KLARIFIKASI</span><h2>{{ $project['title'] }}</h2><p>{{ $project['researcher'] }}</p></div></div>
+        @if($errors->any())<div class="form-alert form-alert-error" role="alert"><strong>Formulir belum dapat dikirim.</strong><ul>@foreach($errors->all() as $error)<li>{{ $error }}</li>@endforeach</ul></div>@endif
+        <form method="POST" action="{{ route('donor.audit.store', ['slug' => $project['slug']]) }}" class="donor-form">@csrf
+            <div class="donor-form-field"><label for="ledger_id">Transaksi yang dipertanyakan <span aria-hidden="true">*</span></label><select id="ledger_id" name="ledger_id" required><option value="">Pilih transaksi ledger</option>@foreach($entries as $entry)<option value="{{ $entry['id'] }}" @selected(old('ledger_id') === $entry['id'])>{{ $entry['receipt'] }} · {{ $entry['description'] }} · Rp{{ number_format($entry['amount'], 0, ',', '.') }}</option>@endforeach</select><small>Pilih satu baris pengeluaran yang ingin Anda tanyakan.</small></div>
+            <div class="donor-form-field"><label for="subject">Judul pertanyaan <span aria-hidden="true">*</span></label><input id="subject" name="subject" value="{{ old('subject') }}" maxlength="120" minlength="5" required placeholder="Contoh: Permintaan rincian pembelian bahan"><small>5–120 karakter.</small></div>
+            <div class="donor-form-field"><label for="message">Uraian klarifikasi <span aria-hidden="true">*</span></label><textarea id="message" name="message" rows="5" maxlength="1500" minlength="15" required placeholder="Jelaskan informasi yang ingin Anda ketahui atau bagian yang perlu ditinjau.">{{ old('message') }}</textarea><small>Minimal 15 karakter. Sertakan alasan yang jelas dan sopan.</small></div>
+            <div class="donor-form-actions"><a href="{{ route('donor.audit.index') }}" class="button button-outline">Batal</a><button type="submit" class="button button-primary">Kirim klarifikasi</button></div>
+        </form>
+    </section>
+    <aside class="donor-panel donor-detail-side"><h2>Informasi proses</h2><ol class="audit-process-list"><li><span>1</span><div><strong>Kirim pertanyaan</strong><small>ResFund mencatat tiket pada proyek dan transaksi yang dipilih.</small></div></li><li><span>2</span><div><strong>Peneliti menerima tiket</strong><small>Peneliti diminta memberikan tanggapan dalam 3 × 24 jam.</small></div></li><li><span>3</span><div><strong>Pantau respons</strong><small>Status dan jawaban dapat dilihat pada riwayat klarifikasi.</small></div></li></ol><div class="donor-info-callout donor-info-callout-small">Fitur ini merupakan simulasi. Pesan belum dikirim ke akun peneliti operasional.</div></aside>
+</div>
+@if(count($tickets))<section class="donor-panel"><div class="donor-panel-heading"><div><span class="donor-section-kicker">RIWAYAT PROYEK</span><h2>Klarifikasi sebelumnya</h2></div></div><div class="audit-ticket-list">@foreach($tickets as $ticket)<article class="audit-ticket"><div class="audit-ticket-top"><span class="ticket-id">{{ $ticket['id'] }}</span><span class="status-pill waiting_payment">{{ $ticket['status_label'] }}</span></div><h3>{{ $ticket['subject'] }}</h3><p>{{ $ticket['message'] }}</p><small>Target respons: {{ $ticket['response_deadline'] }}</small></article>@endforeach</div></section>@endif
+@endsection

@@ -1,0 +1,662 @@
+[
+  {
+    "viewport": 1600,
+    "body": 1600,
+    "document": 1600,
+    "field": {
+      "x": 194,
+      "y": 85,
+      "width": 764.625,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 194,
+      "y": 85,
+      "width": 764.625,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 208,
+      "y": 98.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 1600,
+    "page": "assignments"
+  },
+  {
+    "viewport": 1440,
+    "body": 1440,
+    "document": 1440,
+    "field": {
+      "x": 114,
+      "y": 85,
+      "width": 764.625,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 114,
+      "y": 85,
+      "width": 764.625,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 128,
+      "y": 98.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 1440,
+    "page": "assignments"
+  },
+  {
+    "viewport": 1366,
+    "body": 1366,
+    "document": 1366,
+    "field": {
+      "x": 77,
+      "y": 85,
+      "width": 764.625,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 77,
+      "y": 85,
+      "width": 764.625,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 91,
+      "y": 98.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 1366,
+    "page": "assignments"
+  },
+  {
+    "viewport": 1280,
+    "body": 1280,
+    "document": 1280,
+    "field": {
+      "x": 59,
+      "y": 85,
+      "width": 714.625,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 59,
+      "y": 85,
+      "width": 714.625,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 73,
+      "y": 98.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 1280,
+    "page": "assignments"
+  },
+  {
+    "viewport": 1024,
+    "body": 1024,
+    "document": 1024,
+    "field": {
+      "x": 59,
+      "y": 85,
+      "width": 458.625,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 59,
+      "y": 85,
+      "width": 458.625,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 73,
+      "y": 98.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 1024,
+    "page": "assignments"
+  },
+  {
+    "viewport": 800,
+    "body": 800,
+    "document": 800,
+    "field": {
+      "x": 59,
+      "y": 85,
+      "width": 234.625,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 59,
+      "y": 85,
+      "width": 234.625,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 73,
+      "y": 98.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 800,
+    "page": "assignments"
+  },
+  {
+    "viewport": 760,
+    "body": 760,
+    "document": 760,
+    "field": {
+      "x": 70,
+      "y": 76,
+      "width": 393.546875,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 70,
+      "y": 76,
+      "width": 393.546875,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 84,
+      "y": 89.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 760,
+    "page": "assignments"
+  },
+  {
+    "viewport": 540,
+    "body": 540,
+    "document": 540,
+    "field": {
+      "x": 70,
+      "y": 76,
+      "width": 251.609375,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 70,
+      "y": 76,
+      "width": 251.609375,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 84,
+      "y": 89.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 540,
+    "page": "assignments"
+  },
+  {
+    "viewport": 390,
+    "body": 390,
+    "document": 390,
+    "field": {
+      "x": 70,
+      "y": 76,
+      "width": 250,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 70,
+      "y": 76,
+      "width": 250,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 84,
+      "y": 89.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 390,
+    "page": "assignments"
+  },
+  {
+    "viewport": 360,
+    "body": 360,
+    "document": 360,
+    "field": {
+      "x": 70,
+      "y": 76,
+      "width": 220,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 70,
+      "y": 76,
+      "width": 220,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 84,
+      "y": 89.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 360,
+    "page": "assignments"
+  },
+  {
+    "viewport": 320,
+    "body": 320,
+    "document": 320,
+    "field": {
+      "x": 70,
+      "y": 76,
+      "width": 180,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 70,
+      "y": 76,
+      "width": 180,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 84,
+      "y": 89.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 320,
+    "page": "assignments"
+  },
+  {
+    "viewport": 1600,
+    "body": 1600,
+    "document": 1600,
+    "field": {
+      "x": 194,
+      "y": 85,
+      "width": 764.625,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 194,
+      "y": 85,
+      "width": 764.625,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 208,
+      "y": 98.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 1600,
+    "page": "history"
+  },
+  {
+    "viewport": 1440,
+    "body": 1440,
+    "document": 1440,
+    "field": {
+      "x": 114,
+      "y": 85,
+      "width": 764.625,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 114,
+      "y": 85,
+      "width": 764.625,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 128,
+      "y": 98.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 1440,
+    "page": "history"
+  },
+  {
+    "viewport": 1366,
+    "body": 1366,
+    "document": 1366,
+    "field": {
+      "x": 77,
+      "y": 85,
+      "width": 764.625,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 77,
+      "y": 85,
+      "width": 764.625,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 91,
+      "y": 98.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 1366,
+    "page": "history"
+  },
+  {
+    "viewport": 1280,
+    "body": 1280,
+    "document": 1280,
+    "field": {
+      "x": 59,
+      "y": 85,
+      "width": 714.625,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 59,
+      "y": 85,
+      "width": 714.625,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 73,
+      "y": 98.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 1280,
+    "page": "history"
+  },
+  {
+    "viewport": 1024,
+    "body": 1024,
+    "document": 1024,
+    "field": {
+      "x": 59,
+      "y": 85,
+      "width": 458.625,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 59,
+      "y": 85,
+      "width": 458.625,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 73,
+      "y": 98.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 1024,
+    "page": "history"
+  },
+  {
+    "viewport": 800,
+    "body": 800,
+    "document": 800,
+    "field": {
+      "x": 59,
+      "y": 85,
+      "width": 234.625,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 59,
+      "y": 85,
+      "width": 234.625,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 73,
+      "y": 98.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 800,
+    "page": "history"
+  },
+  {
+    "viewport": 760,
+    "body": 760,
+    "document": 760,
+    "field": {
+      "x": 70,
+      "y": 76,
+      "width": 393.546875,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 70,
+      "y": 76,
+      "width": 393.546875,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 84,
+      "y": 89.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 760,
+    "page": "history"
+  },
+  {
+    "viewport": 540,
+    "body": 540,
+    "document": 540,
+    "field": {
+      "x": 70,
+      "y": 76,
+      "width": 251.609375,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 70,
+      "y": 76,
+      "width": 251.609375,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 84,
+      "y": 89.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 540,
+    "page": "history"
+  },
+  {
+    "viewport": 390,
+    "body": 390,
+    "document": 390,
+    "field": {
+      "x": 70,
+      "y": 76,
+      "width": 250,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 70,
+      "y": 76,
+      "width": 250,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 84,
+      "y": 89.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 390,
+    "page": "history"
+  },
+  {
+    "viewport": 360,
+    "body": 360,
+    "document": 360,
+    "field": {
+      "x": 70,
+      "y": 76,
+      "width": 220,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 70,
+      "y": 76,
+      "width": 220,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 84,
+      "y": 89.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 360,
+    "page": "history"
+  },
+  {
+    "viewport": 320,
+    "body": 320,
+    "document": 320,
+    "field": {
+      "x": 70,
+      "y": 76,
+      "width": 180,
+      "height": 45.796875
+    },
+    "input": {
+      "x": 70,
+      "y": 76,
+      "width": 180,
+      "height": 45.796875
+    },
+    "icon": {
+      "x": 84,
+      "y": 89.890625,
+      "width": 18,
+      "height": 18,
+      "display": "block",
+      "position": "absolute"
+    },
+    "verticalCenterOffset": 0.01,
+    "iconLeftInset": 14,
+    "iconRightWithinPadding": 16,
+    "width": 320,
+    "page": "history"
+  }
+]

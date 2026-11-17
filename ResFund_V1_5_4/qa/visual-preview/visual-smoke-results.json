@@ -1,0 +1,745 @@
+[
+  {
+    "viewport": 1600,
+    "bodyWidth": 1600,
+    "documentWidth": 1600,
+    "headerHeight": 78,
+    "images": [
+      {
+        "alt": "ResFund — Research for Impact",
+        "loaded": true,
+        "width": 196,
+        "height": 62
+      },
+      {
+        "alt": "Peneliti bekerja di laboratorium",
+        "loaded": true,
+        "width": 534,
+        "height": 430
+      }
+    ],
+    "buttons": [],
+    "page": "home",
+    "viewportName": "desktop"
+  },
+  {
+    "viewport": 1600,
+    "bodyWidth": 1600,
+    "documentWidth": 1600,
+    "headerHeight": 78,
+    "images": [
+      {
+        "alt": "ResFund — Research for Impact",
+        "loaded": true,
+        "width": 196,
+        "height": 62
+      },
+      {
+        "alt": "",
+        "loaded": true,
+        "width": 46,
+        "height": 46
+      }
+    ],
+    "buttons": [
+      {
+        "label": "Masuk",
+        "background": "rgb(36, 95, 206)",
+        "active": true
+      },
+      {
+        "label": "Daftar",
+        "background": "rgb(255, 255, 255)",
+        "active": false
+      }
+    ],
+    "page": "login",
+    "viewportName": "desktop",
+    "authAsideTop": 338.578125,
+    "authCardTop": 114,
+    "authCardHeight": 958.125,
+    "authCardCenterOffset": 0.0,
+    "authButtonHeights": [
+      46,
+      46
+    ]
+  },
+  {
+    "viewport": 1600,
+    "bodyWidth": 1600,
+    "documentWidth": 1600,
+    "headerHeight": 78,
+    "images": [
+      {
+        "alt": "ResFund — Research for Impact",
+        "loaded": true,
+        "width": 196,
+        "height": 62
+      },
+      {
+        "alt": "",
+        "loaded": true,
+        "width": 46,
+        "height": 46
+      }
+    ],
+    "buttons": [
+      {
+        "label": "Masuk",
+        "background": "rgb(255, 255, 255)",
+        "active": false
+      },
+      {
+        "label": "Daftar",
+        "background": "rgb(36, 95, 206)",
+        "active": true
+      }
+    ],
+    "page": "register",
+    "viewportName": "desktop",
+    "authAsideTop": 392.75,
+    "authCardTop": 114,
+    "authCardHeight": 1066.484375,
+    "authCardCenterOffset": 0.0,
+    "authButtonHeights": [
+      46,
+      46
+    ]
+  },
+  {
+    "viewport": 390,
+    "bodyWidth": 390,
+    "documentWidth": 390,
+    "headerHeight": 74,
+    "authAsideBottom": null,
+    "images": [
+      {
+        "alt": "ResFund — Research for Impact",
+        "loaded": true
+      },
+      {
+        "alt": "Peneliti bekerja di laboratorium",
+        "loaded": true
+      }
+    ],
+    "page": "home",
+    "viewportName": "mobile",
+    "mobileMenuOpenClose": "PASS"
+  },
+  {
+    "viewport": 390,
+    "bodyWidth": 390,
+    "documentWidth": 390,
+    "headerHeight": 74,
+    "authAsideBottom": 451,
+    "images": [
+      {
+        "alt": "ResFund — Research for Impact",
+        "loaded": true
+      },
+      {
+        "alt": "",
+        "loaded": true
+      }
+    ],
+    "page": "login",
+    "viewportName": "mobile"
+  },
+  {
+    "viewport": 390,
+    "bodyWidth": 390,
+    "documentWidth": 390,
+    "headerHeight": 74,
+    "authAsideBottom": 451,
+    "images": [
+      {
+        "alt": "ResFund — Research for Impact",
+        "loaded": true
+      },
+      {
+        "alt": "",
+        "loaded": true
+      }
+    ],
+    "page": "register",
+    "viewportName": "mobile"
+  },
+  {
+    "viewportMatrix": [
+      {
+        "viewport": 1600,
+        "body": 1600,
+        "document": 1600,
+        "navButtonHeights": [],
+        "width": 1600,
+        "page": "home"
+      },
+      {
+        "viewport": 1600,
+        "body": 1600,
+        "document": 1600,
+        "navButtonHeights": [
+          46,
+          46
+        ],
+        "width": 1600,
+        "page": "login"
+      },
+      {
+        "viewport": 1600,
+        "body": 1600,
+        "document": 1600,
+        "navButtonHeights": [
+          46,
+          46
+        ],
+        "width": 1600,
+        "page": "register"
+      },
+      {
+        "viewport": 1440,
+        "body": 1440,
+        "document": 1440,
+        "navButtonHeights": [],
+        "width": 1440,
+        "page": "home"
+      },
+      {
+        "viewport": 1440,
+        "body": 1440,
+        "document": 1440,
+        "navButtonHeights": [
+          46,
+          46
+        ],
+        "width": 1440,
+        "page": "login"
+      },
+      {
+        "viewport": 1440,
+        "body": 1440,
+        "document": 1440,
+        "navButtonHeights": [
+          46,
+          46
+        ],
+        "width": 1440,
+        "page": "register"
+      },
+      {
+        "viewport": 1366,
+        "body": 1366,
+        "document": 1366,
+        "navButtonHeights": [],
+        "width": 1366,
+        "page": "home"
+      },
+      {
+        "viewport": 1366,
+        "body": 1366,
+        "document": 1366,
+        "navButtonHeights": [
+          46,
+          46
+        ],
+        "width": 1366,
+        "page": "login"
+      },
+      {
+        "viewport": 1366,
+        "body": 1366,
+        "document": 1366,
+        "navButtonHeights": [
+          46,
+          46
+        ],
+        "width": 1366,
+        "page": "register"
+      },
+      {
+        "viewport": 1280,
+        "body": 1280,
+        "document": 1280,
+        "navButtonHeights": [],
+        "width": 1280,
+        "page": "home"
+      },
+      {
+        "viewport": 1280,
+        "body": 1280,
+        "document": 1280,
+        "navButtonHeights": [
+          46,
+          46
+        ],
+        "width": 1280,
+        "page": "login"
+      },
+      {
+        "viewport": 1280,
+        "body": 1280,
+        "document": 1280,
+        "navButtonHeights": [
+          46,
+          46
+        ],
+        "width": 1280,
+        "page": "register"
+      },
+      {
+        "viewport": 1180,
+        "body": 1180,
+        "document": 1180,
+        "navButtonHeights": [],
+        "width": 1180,
+        "page": "home"
+      },
+      {
+        "viewport": 1180,
+        "body": 1180,
+        "document": 1180,
+        "navButtonHeights": [
+          46,
+          46
+        ],
+        "width": 1180,
+        "page": "login"
+      },
+      {
+        "viewport": 1180,
+        "body": 1180,
+        "document": 1180,
+        "navButtonHeights": [
+          46,
+          46
+        ],
+        "width": 1180,
+        "page": "register"
+      },
+      {
+        "viewport": 1060,
+        "body": 1060,
+        "document": 1060,
+        "navButtonHeights": [],
+        "width": 1060,
+        "page": "home"
+      },
+      {
+        "viewport": 1060,
+        "body": 1060,
+        "document": 1060,
+        "navButtonHeights": [
+          0,
+          0
+        ],
+        "width": 1060,
+        "page": "login"
+      },
+      {
+        "viewport": 1060,
+        "body": 1060,
+        "document": 1060,
+        "navButtonHeights": [
+          0,
+          0
+        ],
+        "width": 1060,
+        "page": "register"
+      },
+      {
+        "viewport": 1024,
+        "body": 1024,
+        "document": 1024,
+        "navButtonHeights": [],
+        "width": 1024,
+        "page": "home"
+      },
+      {
+        "viewport": 1024,
+        "body": 1024,
+        "document": 1024,
+        "navButtonHeights": [
+          0,
+          0
+        ],
+        "width": 1024,
+        "page": "login"
+      },
+      {
+        "viewport": 1024,
+        "body": 1024,
+        "document": 1024,
+        "navButtonHeights": [
+          0,
+          0
+        ],
+        "width": 1024,
+        "page": "register"
+      },
+      {
+        "viewport": 960,
+        "body": 960,
+        "document": 960,
+        "navButtonHeights": [],
+        "width": 960,
+        "page": "home"
+      },
+      {
+        "viewport": 960,
+        "body": 960,
+        "document": 960,
+        "navButtonHeights": [
+          0,
+          0
+        ],
+        "width": 960,
+        "page": "login"
+      },
+      {
+        "viewport": 960,
+        "body": 960,
+        "document": 960,
+        "navButtonHeights": [
+          0,
+          0
+        ],
+        "width": 960,
+        "page": "register"
+      },
+      {
+        "viewport": 800,
+        "body": 800,
+        "document": 800,
+        "navButtonHeights": [],
+        "width": 800,
+        "page": "home"
+      },
+      {
+        "viewport": 800,
+        "body": 800,
+        "document": 800,
+        "navButtonHeights": [
+          0,
+          0
+        ],
+        "width": 800,
+        "page": "login"
+      },
+      {
+        "viewport": 800,
+        "body": 800,
+        "document": 800,
+        "navButtonHeights": [
+          0,
+          0
+        ],
+        "width": 800,
+        "page": "register"
+      },
+      {
+        "viewport": 760,
+        "body": 760,
+        "document": 760,
+        "navButtonHeights": [],
+        "width": 760,
+        "page": "home"
+      },
+      {
+        "viewport": 760,
+        "body": 760,
+        "document": 760,
+        "navButtonHeights": [
+          0,
+          0
+        ],
+        "width": 760,
+        "page": "login"
+      },
+      {
+        "viewport": 760,
+        "body": 760,
+        "document": 760,
+        "navButtonHeights": [
+          0,
+          0
+        ],
+        "width": 760,
+        "page": "register"
+      },
+      {
+        "viewport": 540,
+        "body": 540,
+        "document": 540,
+        "navButtonHeights": [],
+        "width": 540,
+        "page": "home"
+      },
+      {
+        "viewport": 540,
+        "body": 540,
+        "document": 540,
+        "navButtonHeights": [
+          0,
+          0
+        ],
+        "width": 540,
+        "page": "login"
+      },
+      {
+        "viewport": 540,
+        "body": 540,
+        "document": 540,
+        "navButtonHeights": [
+          0,
+          0
+        ],
+        "width": 540,
+        "page": "register"
+      },
+      {
+        "viewport": 430,
+        "body": 430,
+        "document": 430,
+        "navButtonHeights": [],
+        "width": 430,
+        "page": "home"
+      },
+      {
+        "viewport": 430,
+        "body": 430,
+        "document": 430,
+        "navButtonHeights": [
+          0,
+          0
+        ],
+        "width": 430,
+        "page": "login"
+      },
+      {
+        "viewport": 430,
+        "body": 430,
+        "document": 430,
+        "navButtonHeights": [
+          0,
+          0
+        ],
+        "width": 430,
+        "page": "register"
+      },
+      {
+        "viewport": 390,
+        "body": 390,
+        "document": 390,
+        "navButtonHeights": [],
+        "width": 390,
+        "page": "home"
+      },
+      {
+        "viewport": 390,
+        "body": 390,
+        "document": 390,
+        "navButtonHeights": [
+          0,
+          0
+        ],
+        "width": 390,
+        "page": "login"
+      },
+      {
+        "viewport": 390,
+        "body": 390,
+        "document": 390,
+        "navButtonHeights": [
+          0,
+          0
+        ],
+        "width": 390,
+        "page": "register"
+      },
+      {
+        "viewport": 360,
+        "body": 360,
+        "document": 360,
+        "navButtonHeights": [],
+        "width": 360,
+        "page": "home"
+      },
+      {
+        "viewport": 360,
+        "body": 360,
+        "document": 360,
+        "navButtonHeights": [
+          0,
+          0
+        ],
+        "width": 360,
+        "page": "login"
+      },
+      {
+        "viewport": 360,
+        "body": 360,
+        "document": 360,
+        "navButtonHeights": [
+          0,
+          0
+        ],
+        "width": 360,
+        "page": "register"
+      },
+      {
+        "viewport": 320,
+        "body": 320,
+        "document": 320,
+        "navButtonHeights": [],
+        "width": 320,
+        "page": "home"
+      },
+      {
+        "viewport": 320,
+        "body": 320,
+        "document": 320,
+        "navButtonHeights": [
+          0,
+          0
+        ],
+        "width": 320,
+        "page": "login"
+      },
+      {
+        "viewport": 320,
+        "body": 320,
+        "document": 320,
+        "navButtonHeights": [
+          0,
+          0
+        ],
+        "width": 320,
+        "page": "register"
+      }
+    ]
+  },
+  {
+    "adminKpiViewportMatrix": [
+      {
+        "viewport": 1600,
+        "body": 1600,
+        "document": 1600,
+        "cardWidth": 363,
+        "contentWidth": 269,
+        "amountWidth": 269,
+        "amountScroll": 269,
+        "amountClient": 269,
+        "text": "24px",
+        "width": 1600
+      },
+      {
+        "viewport": 1440,
+        "body": 1440,
+        "document": 1440,
+        "cardWidth": 334,
+        "contentWidth": 240,
+        "amountWidth": 240,
+        "amountScroll": 240,
+        "amountClient": 240,
+        "text": "21.6px",
+        "width": 1440
+      },
+      {
+        "viewport": 1366,
+        "body": 1366,
+        "document": 1366,
+        "cardWidth": 316,
+        "contentWidth": 222,
+        "amountWidth": 222,
+        "amountScroll": 222,
+        "amountClient": 222,
+        "text": "20.49px",
+        "width": 1366
+      },
+      {
+        "viewport": 1280,
+        "body": 1280,
+        "document": 1280,
+        "cardWidth": 294,
+        "contentWidth": 200,
+        "amountWidth": 200,
+        "amountScroll": 200,
+        "amountClient": 200,
+        "text": "19.2px",
+        "width": 1280
+      },
+      {
+        "viewport": 1180,
+        "body": 1180,
+        "document": 1180,
+        "cardWidth": 554,
+        "contentWidth": 460,
+        "amountWidth": 460,
+        "amountScroll": 460,
+        "amountClient": 460,
+        "text": "18px",
+        "width": 1180
+      },
+      {
+        "viewport": 1024,
+        "body": 1024,
+        "document": 1024,
+        "cardWidth": 476,
+        "contentWidth": 382,
+        "amountWidth": 382,
+        "amountScroll": 382,
+        "amountClient": 382,
+        "text": "18px",
+        "width": 1024
+      },
+      {
+        "viewport": 760,
+        "body": 760,
+        "document": 760,
+        "cardWidth": 704,
+        "contentWidth": 622,
+        "amountWidth": 622,
+        "amountScroll": 622,
+        "amountClient": 622,
+        "text": "25px",
+        "width": 760
+      },
+      {
+        "viewport": 540,
+        "body": 540,
+        "document": 540,
+        "cardWidth": 484,
+        "contentWidth": 402,
+        "amountWidth": 402,
+        "amountScroll": 402,
+        "amountClient": 402,
+        "text": "25px",
+        "width": 540
+      },
+      {
+        "viewport": 390,
+        "body": 390,
+        "document": 390,
+        "cardWidth": 334,
+        "contentWidth": 252,
+        "amountWidth": 252,
+        "amountScroll": 252,
+        "amountClient": 252,
+        "text": "20px",
+        "width": 390
+      },
+      {
+        "viewport": 320,
+        "body": 320,
+        "document": 320,
+        "cardWidth": 264,
+        "contentWidth": 182,
+        "amountWidth": 182,
+        "amountScroll": 182,
+        "amountClient": 182,
+        "text": "20px",
+        "width": 320
+      }
+    ]
+  }
+]

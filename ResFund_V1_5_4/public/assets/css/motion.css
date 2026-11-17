@@ -1,0 +1,138 @@
+/* ResFund Motion System — subtle motion, accessible by default. */
+:root {
+    --rf-motion-fast: 150ms;
+    --rf-motion-normal: 260ms;
+    --rf-motion-slow: 560ms;
+    --rf-motion-ease: cubic-bezier(.22,.72,.2,1);
+}
+
+/* Page entrance: small opacity/vertical shift instead of a dramatic transition. */
+html.rf-motion-ready body.rf-page-enter {
+    animation: rf-page-enter 480ms var(--rf-motion-ease) both;
+}
+@keyframes rf-page-enter {
+    from { opacity: .01; transform: translateY(7px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Scroll reveal is only enabled after the JS enhancement has initialized. */
+html.rf-motion-ready .rf-reveal {
+    opacity: 0;
+    transform: translate3d(0, 16px, 0);
+    transition:
+        opacity 580ms var(--rf-motion-ease) var(--rf-reveal-delay, 0ms),
+        transform 580ms var(--rf-motion-ease) var(--rf-reveal-delay, 0ms);
+    will-change: opacity, transform;
+}
+html.rf-motion-ready .rf-reveal.rf-is-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+/* Hover details stay restrained and only apply to devices with a real pointer. */
+@media (hover: hover) and (pointer: fine) {
+    .project-card, .step-card, .donor-stat-card, .reviewer-kpi-card,
+    .admin-kpi-card, .admin-quick-card, .admin-reviewer-card,
+    .finance-report-card, .surface-card {
+        transition: transform 220ms var(--rf-motion-ease), box-shadow 220ms ease, border-color 220ms ease;
+    }
+    .project-card:hover, .step-card:hover, .donor-stat-card:hover,
+    .reviewer-kpi-card:hover, .admin-kpi-card:hover, .admin-quick-card:hover,
+    .admin-reviewer-card:hover, .finance-report-card:hover, .surface-card:hover {
+        transform: translateY(-2px);
+    }
+    .hero-photo-visual {
+        transition: transform 420ms var(--rf-motion-ease), box-shadow 300ms ease;
+    }
+    .hero-photo-visual.rf-is-tilting {
+        transform: perspective(1100px) rotateX(var(--rf-tilt-x, 0deg)) rotateY(var(--rf-tilt-y, 0deg));
+        transform-style: preserve-3d;
+    }
+}
+
+/* Floating notes move only a few pixels; content remains stationary and readable. */
+.hero-photo-visual .floating-note {
+    animation: rf-note-float 6.8s ease-in-out infinite;
+}
+.hero-photo-visual .note-bottom { animation-delay: -3.2s; }
+@keyframes rf-note-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Header shadow appears after scrolling; no decorative line is added. */
+.site-header {
+    transition: box-shadow 240ms ease, background-color 240ms ease;
+}
+.site-header.rf-header-scrolled {
+    box-shadow: 0 8px 26px rgba(16, 44, 87, .075);
+    background: rgba(255,255,255,.985);
+}
+
+/* Press feedback gives a physical response without a noisy ripple effect. */
+.button, .nav-auth-button, .donor-nav-link, .admin-table-action, .reviewer-text-link {
+    transition: transform 140ms ease, box-shadow 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+.button.rf-is-pressed, .nav-auth-button.rf-is-pressed,
+.donor-nav-link.rf-is-pressed, .admin-table-action.rf-is-pressed,
+.reviewer-text-link.rf-is-pressed {
+    transform: translateY(1px) scale(.985);
+}
+
+/* Form focus: restrained halo that complements existing focus-visible outlines. */
+.form-group, .donor-form-field, .admin-field, .reviewer-form-field {
+    transition: background-color 180ms ease, border-color 180ms ease;
+}
+.form-group.rf-field-focused > label,
+.donor-form-field.rf-field-focused > label,
+.admin-field.rf-field-focused > label,
+.reviewer-form-field.rf-field-focused > label {
+    color: #245FCE;
+}
+
+/* Flash messages slide in; they are not auto-dismissed. */
+.rf-message-enter {
+    animation: rf-message-enter 360ms var(--rf-motion-ease) both;
+}
+@keyframes rf-message-enter {
+    from { opacity: 0; transform: translateY(-7px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Dialogs and receipt modals get a small entrance, preserving their focus behavior. */
+dialog[open], [data-evidence-modal]:not([hidden]) {
+    animation: rf-dialog-enter 220ms var(--rf-motion-ease) both;
+}
+@keyframes rf-dialog-enter {
+    from { opacity: 0; transform: translateY(8px) scale(.99); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Native details disclosure without relying on JS for open/close. */
+details > *:not(summary) {
+    animation: rf-details-enter 220ms ease both;
+}
+@keyframes rf-details-enter {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile menu transitions: its existing is-open state remains the source of truth. */
+@media (max-width: 1060px) {
+    [data-mobile-menu] {
+        transition: opacity 220ms ease, transform 220ms var(--rf-motion-ease), visibility 220ms ease;
+    }
+}
+
+/* Reduced-motion users receive the same information and controls without movement. */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+        transition-delay: 0ms !important;
+    }
+    html.rf-motion-ready .rf-reveal { opacity: 1 !important; transform: none !important; }
+    .hero-photo-visual { transform: none !important; }
+}
