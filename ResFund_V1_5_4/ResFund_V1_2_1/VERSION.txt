@@ -1,4 +1,0 @@
-ResFund Interactive Prototype V1.2.1
-Scope: Area Publik, Autentikasi, Dashboard Donatur S07-S12, Checkout dan Payment Gateway simulasi.
-Change: Donasi sekarang menuju checkout untuk Donatur login; riwayat donasi dan progres proyek diperbarui pada sesi prototype; S10 menampilkan multi-project transparency overview.
-Data: Demonstrasi berbasis session; bukan transaksi operasional.
